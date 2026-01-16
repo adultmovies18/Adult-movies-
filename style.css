@@ -1,0 +1,35 @@
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 15px;
+}
+
+/* CARD */
+.card {
+    position: relative;
+    background: #222;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* IMAGE */
+.card img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+/* MOVIE NAME */
+.title {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3));
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
