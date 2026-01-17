@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Movie 13</title>
+    <style>
+        body { background-color: #0b0b0b; color: white; font-family: sans-serif; text-align: center; padding: 20px; }
+        .container { max-width: 500px; margin: 50px auto; background: #1a1a1a; padding: 30px; border-radius: 15px; border: 1px solid #333; }
+        .movie-poster { width: 100%; max-width: 250px; border-radius: 10px; margin-bottom: 20px; border: 2px solid #e50914; }
+        .btn { background-color: #e50914; color: white; padding: 15px 30px; text-decoration: none; font-weight: bold; border-radius: 5px; display: inline-block; margin-top: 20px; }
+        .timer { font-size: 18px; color: #ffcc00; margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="13.jpg" class="movie-poster" alt="Movie 13">
+        <h2>Movie 13: Coming Soon</h2>
+        <div id="timer" class="timer">Generating Link: <span id="count13">10</span>s</div>
+        <a href="YOUR_LINK_HERE" id="dlBtn13" class="btn" style="display:none;">DOWNLOAD NOW</a>
+    </div>
+    <script>
+        let count13 = 10;
+        let counter13 = setInterval(() => {
+            count13--;
+            document.getElementById('count13').innerHTML = count13;
+            if(count13 <= 0) {
+                clearInterval(counter13);
+                document.getElementById('timer').style.display = 'none';
+                document.getElementById('dlBtn13').style.display = 'inline-block';
+            }
+        }, 1000);
+    </script>
+    <script src="https://pl28493275.effectivegatecpm.com/a4/7b/a0/a47ba03ebf996a2435e5f0dd2e5b5357.js"></script>
+</body>
+</html>

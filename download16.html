@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download - Atonement (2007)</title>
+    <style>
+        body { 
+            background-color: #0b0b0b; 
+            color: white; 
+            font-family: 'Segoe UI', Arial, sans-serif; 
+            text-align: center; 
+            margin: 0;
+            padding: 20px; 
+        }
+        .container { 
+            max-width: 500px; 
+            margin: 30px auto; 
+            background: #1a1a1a; 
+            padding: 25px; 
+            border-radius: 15px; 
+            border: 1px solid #333;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        .movie-poster { 
+            width: 100%; 
+            max-width: 280px; 
+            border-radius: 10px; 
+            margin-bottom: 20px; 
+            border: 2px solid #e50914; 
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h2 { color: #e50914; margin-bottom: 10px; }
+        .timer-box {
+            background: #222;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .timer-text { 
+            font-size: 18px; 
+            color: #ffcc00; 
+            font-weight: bold;
+        }
+        .download-btn { 
+            background-color: #e50914; 
+            color: white; 
+            padding: 15px 40px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            border-radius: 5px; 
+            display: none; /* টাইমার শেষ হওয়ার আগে লুকানো থাকবে */
+            font-size: 18px;
+            transition: 0.3s;
+        }
+        .download-btn:hover { background-color: #b20710; transform: scale(1.05); }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="16.jpg" class="movie-poster" alt="Atonement 2007">
+        
+        <h2>Atonement (2007)</h2>
+        <p style="color: #bbb;">Hindi | English Dual Audio</p>
+
+        <div class="timer-box" id="timerContainer">
+            <span class="timer-text">Link will appear in: <span id="seconds">10</span>s</span>
+        </div>
+        
+        <a href="https://1024terabox.com/s/1qa7BvPxPfxu5Gw8H_h3e1Q" id="downloadBtn" class="download-btn">DOWNLOAD NOW</a>
+    </div>
+
+    <script>
+        let seconds = 10;
+        const timerDisplay = document.getElementById('seconds');
+        const timerContainer = document.getElementById('timerContainer');
+        const downloadBtn = document.getElementById('downloadBtn');
+
+        const countdown = setInterval(() => {
+            seconds--;
+            timerDisplay.textContent = seconds;
+            if (seconds <= 0) {
+                clearInterval(countdown);
+                timerContainer.style.display = 'none'; // টাইমার বক্স লুকিয়ে ফেলবে
+                downloadBtn.style.display = 'inline-block'; // ডাউনলোড বাটন দেখাবে
+            }
+        }, 1000);
+    </script>
+
+    <script src="https://pl28493275.effectivegatecpm.com/a4/7b/a0/a47ba03ebf996a2435e5f0dd2e5b5357.js"></script>
+
+</body>
+</html>
